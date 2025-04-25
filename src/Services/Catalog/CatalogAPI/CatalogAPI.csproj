@@ -10,6 +10,13 @@
     <DockerComposeProjectPath>..\..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="ProductsFeatures\NewFolder\**" />
+    <Content Remove="ProductsFeatures\NewFolder\**" />
+    <EmbeddedResource Remove="ProductsFeatures\NewFolder\**" />
+    <None Remove="ProductsFeatures\NewFolder\**" />
+  </ItemGroup>
+
   <ItemGroup>    
     <PackageReference Include="Carter" Version="8.2.1" />    
     <PackageReference Include="Marten" Version="7.40.0" />    
