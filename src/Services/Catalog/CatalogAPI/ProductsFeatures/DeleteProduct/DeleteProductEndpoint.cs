@@ -4,7 +4,7 @@
 
     public record DeleteProductResponse(bool IsSuccess);
 
-    internal class DeleteProductEndpoint : ICarterModule
+    public class DeleteProductEndpoint : ICarterModule
     {
         public void AddRoutes(IEndpointRouteBuilder app)
         {
